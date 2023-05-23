@@ -1,5 +1,7 @@
 'use strict';
 
+//Ejercicio 1
+
 function multiplicacion (a, b) {
     const result = a*b;
     console.log(result);
@@ -18,4 +20,14 @@ function parImpar (num) {
     } else {
         console.log(impar);
     }
+}
+
+//Ejercicio 2
+
+function dimeElIva (valorSinIva) {
+    const precioSinIva = valorSinIva;
+    const iva = valorSinIva*0.21;
+    const total = precioSinIva+iva;
+    const resultado = `Precio sin IVA: ${precioSinIva} IVA: ${iva} Total: ${total}`;
+    console.log(resultado);
 }
