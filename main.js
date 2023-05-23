@@ -31,3 +31,14 @@ function dimeElIva (valorSinIva) {
     const resultado = `Precio sin IVA: ${precioSinIva} IVA: ${iva} Total: ${total}`;
     console.log(resultado);
 }
+
+// Ejercicio 1 del 2.5.3
+
+// modificamos una variable de ámbito global
+let secretLetter = 'y';
+function mySecretLetter() {
+  secretLetter = 'x';
+  return secretLetter;
+}
+console.log(secretLetter); // devuelve "x"
+console.log(mySecretLetter()); // devuelve "x"
